@@ -11,7 +11,7 @@ const SocialLinks = () => {
           LinkedIn <FaLinkedin size={30} />
         </>
       ),
-      href: "https://linkedin.com/in/emoonlit",
+      href: process.env.REACT_APP_INFO_LINKEDIN,
       style: "rounded-tr-md",
     },
     {
@@ -21,7 +21,7 @@ const SocialLinks = () => {
           GitHub <FaGithub size={30} />
         </>
       ),
-      href: "https://github.com/emoonlit",
+      href: process.env.REACT_APP_INFO_GITHUB
     },
     {
       id: 3,
@@ -30,7 +30,7 @@ const SocialLinks = () => {
           Mail <HiOutlineMail size={30} />
         </>
       ),
-      href: "mailto:emoonlit@gmail.com",
+      href: process.env.REACT_APP_INFO_EMAIL
     },
     {
       id: 4,
@@ -39,7 +39,7 @@ const SocialLinks = () => {
           Resume <BsFillPersonLinesFill size={30} />
         </>
       ),
-      href: "/emoonlit-resume.pdf",
+      href: process.env.REACT_APP_INFO_RESUME,
       style: "rounded-br-md",
       download: true,
     },
