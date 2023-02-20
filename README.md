@@ -1,4 +1,24 @@
-# Getting Started with Create React App
+# My Porfolio
+
+Purpose of this repository is to host an online curriculum and serve as a laboratory for frontend practices.
+
+[emoonlit.dev](https://emoonlit.dev)
+
+
+## Thanks to
+Thanks to [Yash](https://github.com/theyashpatel) for the initial template! 
+
+# Todo list
+- [x] Create and deploy a new portfolio
+- [ ] Deploy old projects hosted on heroku and update project list
+- [ ] Add "light mode"
+- [ ] Add multi language ref: [i18n-languages](https://github.com/overleaf/overleaf/wiki/i18n-Languages)
+- [ ] Add footer
+- [ ] Add contact number
+- [ ] Update template
+
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
