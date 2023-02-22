@@ -30,9 +30,9 @@ const NavBar = () => {
     ]
 
     return (
-        <section className="flex justify-between items-center w-full h-20 px-4 text-white bg-black fixed">
+        <nav className="flex justify-between items-center w-full h-20 px-4 text-white bg-black fixed">
           <div>
-            <h1 className="text-5xl font-bold ml-2">EMoonlit</h1>
+            <h1 className="text-4xl font-bold ml-2">EMoonlit</h1>
           </div>
     
           <ul className="hidden md:flex">
@@ -81,7 +81,7 @@ const NavBar = () => {
               ))}
             </ul>
           )}
-        </section>
+        </nav>
       );
     };
 

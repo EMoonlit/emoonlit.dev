@@ -1,6 +1,11 @@
 import javascript from "../assets/technologies/javascript.png";
+import typescript from '../assets/technologies/typescript.png';
 import node from "../assets/technologies/node.png";
 import csharp from '../assets/technologies/csharp.png';
+import docker from '../assets/technologies/docker.png';
+import git from '../assets/technologies/git.png';
+import github from '../assets/technologies/github.png';
+
 import { Element } from "react-scroll";
 
 
@@ -14,8 +19,14 @@ const Experience = () => {
     },
     {
       id: 2,
+      src: typescript,
+      title: "TypeScript",
+      style: "shadow-blue-800"
+    },
+    {
+      id: 2,
       src: node,
-      title: "CSS",
+      title: "NodeJs",
       style: "shadow-green-500",
     },
     {
@@ -23,7 +34,26 @@ const Experience = () => {
       src: csharp,
       title: "C#",
       style: "shadow-purple-500"
-    }
+    },
+    {
+      id: 4,
+      src: docker,
+      title: "Docker",
+      style: "shadow-blue-500"
+    },
+    {
+      ud: 5,
+      src: git,
+      title: "Git",
+      style: "shadow-orange-500"
+    },
+    {
+      ud: 6,
+      src: github,
+      title: "GitHub",
+      style: "shadow-white"
+    },
+
   ];
 
   return (

@@ -19,7 +19,7 @@ const Home = () => {
             Currently, I work with web application development
             using technologies like React for plugins and frontend,
             NodeJs and Dotnet for backend.
-</p>
+          </p>
 
           <div>
             <Link
