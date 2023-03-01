@@ -61,11 +61,13 @@ const Portfolio = () => {
                 </a>
               </div>
               <div className="items-center justify-center">
-                <h3 className="text-2xl m-4 font-bold border-b-4 border-gray-500 ">
-                   {projectName}
-                </h3>
+                <a href={`${process.env.REACT_APP_INFO_GITHUB}/${githubRepository}`} target="noopener">
+                  <h3 className="text-2xl m-4 font-bold border-b-4 border-gray-500 ">
+                    {projectName}
+                  </h3>
+                </a>
                 <p className="p-3 text-justify">
-                    {description}
+                  {description}
                 </p>
             </div>
             </div>
