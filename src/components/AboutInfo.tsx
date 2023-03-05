@@ -1,17 +1,39 @@
-import { Element } from "react-scroll";
-
 const About = () => {
     return (
-      <Element
-        name="About"
-        className="w-full h-screen bg-gradient-to-b from-gray-800 to-black text-white"
+      <div
+      className="
+        w-full h-screen bg-gradient-to-b
+        from-black 
+        to-gray-800
+        p-4
+        text-gray-300"
       >
-        <section className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
-          <div className="pb-8">
-            <p className="text-4xl font-bold inline border-b-4 border-gray-500">
+        <section className="
+        max-w-screen-lg
+        mx-auto
+        flex
+        flex-col
+        items-center
+        justify-center
+        px-5
+        pt-20
+        h-auto"
+        >
+        <div className="
+          justify-center
+          h-full"
+        >
+            <h3 className="
+              text-4xl 
+              sm:text-7x1
+              font-bold 
+              inline 
+              border-b-4 
+              border-gray-500 
+              text-gray-300"
+              >
               About
-            </p>
-          </div>
+            </h3>
   
           <p className="text-xl mt-20">
             I'm passionate about technology, I started early in the hardware support and maintenance area.
@@ -22,8 +44,9 @@ const About = () => {
             created personalized conversations through the power of artificial intelligence
             and increase business digital results.
           </p>  
+          </div>
         </section>
-      </Element>
+      </div>
     );
   };
   

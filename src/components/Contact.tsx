@@ -1,16 +1,36 @@
-import { Element } from "react-scroll";
-
 const Contact = () => {
     return (
-      <Element
-        name="Contact"
-        className="w-full h-screen bg-gradient-to-b from-black to-gray-800 p-4 text-white"
+      <div
+        className="
+        w-full h-full md:h-screen bg-gradient-to-b
+        from-black 
+        to-gray-800
+        p-4
+        text-gray-300"
       >
-        <section className="flex flex-col p-4 justify-center max-w-screen-lg mx-auto h-full">
+        <section 
+          className="
+            max-w-screen-lg
+            mx-auto
+            flex
+            flex-col
+            justify-center
+            px-5
+            pt-20
+            h-auto"
+          >
           <div className="pb-8">
-            <p className="text-4xl font-bold inline border-b-4 border-gray-500">
+          <h3 className="
+              text-4xl 
+              sm:text-7x1
+              font-bold 
+              inline 
+              border-b-4 
+              border-gray-500 
+              text-gray-300"
+              >
               Contact
-            </p>
+            </h3>
             <p className="py-6">Submit the form below to get in touch with me</p>
           </div>
   
@@ -45,7 +65,7 @@ const Contact = () => {
             </form>
           </div>
         </section>
-      </Element>
+      </div>
     );
   };
   
