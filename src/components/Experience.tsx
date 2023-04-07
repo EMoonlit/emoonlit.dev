@@ -56,37 +56,42 @@ const Experience = () => {
   return (
     <div
       className="
-        w-full h-full md:h-screen bg-gradient-to-b
-        from-black 
-        to-gray-800
+        h-full 
+        w-full
+        md: min-h-screen
+        md:w-screen
+        bg-gradient-to-b
+        from-black
+        to-gray-800 
         p-4
-        text-gray-300"
+        text-gray-300
+        md:h-screen"
     >
       <section className="
-        max-w-screen-lg
         mx-auto
         flex
+        h-auto
+        w-full
+        max-w-screen-lg 
         flex-col
         justify-center 
-        w-full
-        h-auto 
         p-4
         pt-20"
       >
         <div>
-          <p className="text-4xl font-bold border-b-4 border-gray-500 inline">
+          <p className="inline border-b-4 border-gray-500 text-4xl font-bold">
           Experience
           </p>
           <p className="py-6">These are the technologies I've worked with</p>
         </div>
 
-        <div className="w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center py-8 px-12 sm:px-0">
+        <div className="grid w-full grid-cols-2 gap-8 py-8 px-12 text-center sm:grid-cols-3 sm:px-0">
           {techs.map(({ id, src, title, style }) => (
             <div
               key={id}
-              className={`shadow-md hover:scale-105 duration-500 py-2 rounded-lg ${style}`}
+              className={`rounded-lg py-2 shadow-md duration-500 hover:scale-105 ${style}`}
             >
-              <img src={src} alt="" className="w-20 mx-auto" />
+              <img src={src} alt="" className="mx-auto w-20" />
               <p className="mt-4">{title}</p>
             </div>
           ))}

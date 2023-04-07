@@ -6,7 +6,11 @@ const Home = () => {
   return (
     <div
       className="
-        w-full h-screen bg-gradient-to-b
+        w-full 
+        h-full
+        md: min-h-screen
+        md:w-screen
+        bg-gradient-to-b
         from-black 
         to-gray-800
         p-4
@@ -21,8 +25,10 @@ const Home = () => {
         justify-center
         px-5
         md:flex-row
+        p-4
         pt-20
-        h-full"
+        h-auto
+        w-full"
       >
         <div className="
           flex flex-col
@@ -47,9 +53,20 @@ const Home = () => {
           <div>
             <Link
               to="/Portfolio"
-
-
-              className="group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer"
+              className="
+                group
+                text-white
+                w-fit
+                px-6 
+                py-3 
+                my-2 
+                flex 
+                items-center 
+                rounded-md 
+                bg-gradient-to-r 
+                from-cyan-500 
+                to-blue-500 
+                cursor-pointer"
             >
               Portfolio
               <span className="group-hover:rotate-90 duration-300">
@@ -59,13 +76,11 @@ const Home = () => {
           </div>
         </div>
 
-        <div>
           <img
             src={ProfilePhoto}
             alt="my profile"
-            className="rounded-2xl mx-auto w-2/3 md:w-full"
+            className="rounded-2xl mx-auto w-2/3 md:w-96"
           />
-        </div>
       </section>
     </div>
   );

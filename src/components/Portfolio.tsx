@@ -33,49 +33,51 @@ const Portfolio = () => {
   return (
     <div
     className="
-      w-full h-full md:h-screen bg-gradient-to-b
-      from-black 
-      to-gray-800
+      h-full w-full bg-gradient-to-b from-black
+      to-gray-800 
       p-4
-      text-gray-300"
+      text-gray-300
+      md:h-screen"
     >
       <section className="
-        max-w-screen-lg
         mx-auto
         flex
+        h-auto
+        w-full
+        max-w-screen-lg
         flex-col
         justify-center
         p-4
-        w-full
-        pt-20
-        h-auto"
+        pt-20"
       >
-        <div className="          justify-center
-          h-full">
-          <p className="text-4xl font-bold inline border-b-4 border-gray-500 text-gray-300">
+        <div className="
+          h-full
+          justify-center"
+        >
+          <p className="inline border-b-4 border-gray-500 text-4xl font-bold text-gray-300">
             Portfolio
           </p>
           <p className="py-6 text-gray-300">Check out some of my work right here</p>
 
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
+        <div className="grid gap-8 px-12 sm:grid-cols-2 sm:px-0 md:grid-cols-3">
           {portfolios.map(({ id, src, projectName, description, demoLink, githubRepository }) => (
-            <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
+            <div key={id} className="rounded-lg shadow-md shadow-gray-600">
               <img
                 src={src}
                 alt=""
-                className="object-scale-down h-48 w-96 ounded-md duration-200 hover:scale-105"
+                className="ounded-md h-48 w-96 object-scale-down duration-200 hover:scale-105"
               />
               <div className="flex items-center justify-center">
-                <a href={demoLink} target="noopener" className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105 text-gray-300">
+                <a href={demoLink} target="noopener" className="m-4 w-1/2 px-6 py-3 text-gray-300 duration-200 hover:scale-105">
                   Demo
                 </a>
-                <a href={`${process.env.REACT_APP_INFO_GITHUB}/${githubRepository}`} target="noopener" className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105 text-gray-300">
+                <a href={`${process.env.REACT_APP_INFO_GITHUB}/${githubRepository}`} target="noopener" className="m-4 w-1/2 px-6 py-3 text-gray-300 duration-200 hover:scale-105">
                     <FaGithub size={30} />
                 </a>
               </div>
               <div className="items-center justify-center">
                 <a href={`${process.env.REACT_APP_INFO_GITHUB}/${githubRepository}`} target="noopener">
-                  <h3 className="text-2xl m-4 font-bold border-b-4 border-gray-500 text-gray-300">
+                  <h3 className="m-4 border-b-4 border-gray-500 text-2xl font-bold text-gray-300">
                     {projectName}
                   </h3>
                 </a>
