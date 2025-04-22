@@ -3,6 +3,24 @@ import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import { Link, Element } from "react-scroll";
 
 const Home = () => {
+  const numberToWords = (num: Number) => {
+    const words = [
+      "zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine",
+      "ten", "eleven", "twelve", "thirteen", "fourteen", "fifteen",
+      "sixteen", "seventeen", "eighteen", "nineteen", "twenty"
+    ];
+
+    const index = parseInt(num.toString(), 10)
+    return words[index] || num.toString()
+  };
+
+  const getYearsOfExperience = () => {
+    const startYear = Number(process.env.REACT_APP_INFO_RESUME_START_DATE) || 2020
+    const currentYear = new Date().getFullYear()
+    if (isNaN(startYear)) return "zero"
+    return numberToWords(currentYear - startYear)
+  };
+
   return (
     <Element
       name="Home"
@@ -14,11 +32,9 @@ const Home = () => {
             I'm a Backend Developer
           </h2>
           <p className="text-gray-500 py-4 max-w-md">
-            I have two years of experience developing API's and other projects.
-
-            Currently, I work with web application development
-            using technologies like React for plugins and frontend,
-            NodeJs and Dotnet for backend.
+            I have {getYearsOfExperience()} years of experience in developing APIs and other projects.
+            I currently work on developing chatbots
+            using different technologies and platforms.
           </p>
 
           <div>

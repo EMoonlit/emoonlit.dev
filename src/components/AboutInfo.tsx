@@ -17,7 +17,7 @@ const About = () => {
             I'm passionate about technology, I started early in the hardware support and maintenance area.
             As I come from a small town, I could see technology transforming people's lives.
 
-            I currently work on the chatbot developer at Take Blip, 
+            I currently work on the chatbot developer at Proa.Ai, 
             company focused automate  relationship with the customer,
             created personalized conversations through the power of artificial intelligence
             and increase business digital results.
