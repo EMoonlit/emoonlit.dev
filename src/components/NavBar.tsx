@@ -1,7 +1,7 @@
 
 import { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
-import { Link } from "react-scroll";
+import { NavLink } from "react-router-dom";
 
 const NavBar = () => {
     const [nav, setNav] = useState(false)
@@ -30,7 +30,7 @@ const NavBar = () => {
     ]
 
     return (
-        <nav className="flex justify-between items-center w-full h-20 px-4 text-white bg-black fixed">
+        <nav className="flex justify-between items-center w-full h-20 px-4 text-gray-300 bg-black fixed z-10">
           <div>
             <h1 className="text-4xl font-bold ml-2">EMoonlit</h1>
           </div>
@@ -41,16 +41,12 @@ const NavBar = () => {
                 key={id}
                 className="px-4 cursor-pointer capitalize font-medium text-gray-500 hover:scale-105 duration-200"
               >
-                <Link
+                <NavLink
                     className={link} 
                     to={link} 
-                    spy={true}
-                    smooth={true} 
-                    duration={500}
-                    offset={-70}
                 >
                   {link}
-                </Link>
+                </NavLink>
               </li>
             ))}
           </ul>
@@ -69,14 +65,12 @@ const NavBar = () => {
                   key={id}
                   className="px-4 cursor-pointer capitalize py-6 text-4xl"
                 >
-                  <Link
+                  <NavLink
                     onClick={() => setNav(!nav)}
                     to={link}
-                    smooth
-                    duration={500}
                   >
                     {link}
-                  </Link>
+                  </NavLink>
                 </li>
               ))}
             </ul>
