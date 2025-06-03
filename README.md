@@ -11,7 +11,7 @@ Thanks to [Yash](https://github.com/theyashpatel) for the initial template!
 # Todo list
 - [x] Create and deploy a new portfolio
 - [x] Not Found page
-- [ ] Deploy old projects hosted on heroku and update project list
+- [ ] Deploy old projects hosted on my self hosted server and update project list
 - [ ] Add "light mode"
 - [ ] Add multi language ref: [i18n-languages](https://github.com/overleaf/overleaf/wiki/i18n-Languages)
 - [ ] Add footer
