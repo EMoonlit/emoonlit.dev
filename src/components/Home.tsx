@@ -1,6 +1,6 @@
 import ProfilePhoto from "../assets/profilePhoto.jpeg";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
-import { Link, Element } from "react-scroll";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   const numberToWords = (num: Number) => {
@@ -22,13 +22,36 @@ const Home = () => {
   };
 
   return (
-    <Element
-      name="Home"
-      className="h-screen w-full bg-gradient-to-b from-black via-black to-gray-800"
+    <div
+      className="
+        w-full h-screen bg-gradient-to-b
+        from-black 
+        to-gray-800
+        p-4
+        text-gray-300"
     >
-      <section className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row">
-        <div className="flex flex-col justify-center h-full">
-          <h2 className="text-4xl sm:text-7xl font-bold text-white">
+      <section className="
+        max-w-screen-lg
+        mx-auto
+        flex
+        flex-col
+        items-center
+        justify-center
+        px-5
+        md:flex-row
+        pt-20
+        h-full"
+      >
+        <div className="
+          flex flex-col
+          justify-center
+          h-full"
+        >
+          <h2 className="
+            text-4xl
+            sm:text-7xl
+            font-bold"
+          >
             I'm a Backend Developer
           </h2>
           <p className="text-gray-500 py-4 max-w-md">
@@ -39,9 +62,9 @@ const Home = () => {
 
           <div>
             <Link
-              to="Portfolio"
-              smooth
-              duration={500}
+              to="/Portfolio"
+
+
               className="group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer"
             >
               Portfolio
@@ -60,7 +83,7 @@ const Home = () => {
           />
         </div>
       </section>
-    </Element>
+    </div>
   );
 };
 
